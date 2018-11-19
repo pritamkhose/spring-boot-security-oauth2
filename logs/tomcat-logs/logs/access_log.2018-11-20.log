@@ -1,0 +1,5 @@
+[20/Nov/2018:00:45:56 +0530] 0:0:0:0:0:0:0:1 "GET /users/user?access_token=129420c8-5ea7-417d-a77e-e5218787386e HTTP/1.1" 401 (190 ms / 117) http-nio-8080-exec-1
+[20/Nov/2018:00:46:03 +0530] 0:0:0:0:0:0:0:1 "GET /data/data HTTP/1.1" 200 (1235 ms / 109) http-nio-8080-exec-2
+[20/Nov/2018:00:47:25 +0530] 0:0:0:0:0:0:0:1 "POST /oauth/token HTTP/1.1" 200 (598 ms / 188) http-nio-8080-exec-4
+[20/Nov/2018:00:47:51 +0530] 0:0:0:0:0:0:0:1 "GET /users/user?access_token=129420c8-5ea7-417d-a77e-e5218787386e HTTP/1.1" 401 (9 ms / 117) http-nio-8080-exec-5
+[20/Nov/2018:00:48:03 +0530] 0:0:0:0:0:0:0:1 "GET /users/user?access_token=cf7898fe-888f-4f80-b222-773e9b47d320 HTTP/1.1" 200 (689 ms / 221) http-nio-8080-exec-6

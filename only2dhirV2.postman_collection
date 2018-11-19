@@ -1,0 +1,298 @@
+{
+	"info": {
+		"_postman_id": "559758e5-9efd-4e9c-b90c-df7d5e9eaa32",
+		"name": "only2dhir",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/users/user",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/users/user?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"user"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "1e5f02b4-5574-4d19-8821-2025e4a45446"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/oauth/token",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2Z2xhbi1jbGllbnQ6ZGV2Z2xhbi1zZWNyZXQ="
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Alex123",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8080/oauth/token"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/oauth/token refresh",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded"
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2Z2xhbi1jbGllbnQ6ZGV2Z2xhbi1zZWNyZXQ="
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Alex123"
+						},
+						{
+							"key": "password",
+							"value": "password"
+						},
+						{
+							"key": "grant_type",
+							"value": "refresh_token"
+						},
+						{
+							"key": "refresh_token",
+							"value": "e2bc4539-2c7a-46d5-9db6-70780374f756",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:8080/oauth/token"
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/user/1?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/users/user/1?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"user",
+						"1"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "1e5f02b4-5574-4d19-8821-2025e4a45446"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/data/data?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"data",
+						"data"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "1e5f02b4-5574-4d19-8821-2025e4a45446"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data/1?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/data/data/1?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"data",
+						"data",
+						"1"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "1e5f02b4-5574-4d19-8821-2025e4a45446"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data/35?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"url": {
+					"raw": "http://localhost:8080/data/data/35?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"data",
+						"data",
+						"35"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "1e5f02b4-5574-4d19-8821-2025e4a45446"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"id\": 1,\n        \"title\": \"BSNL\",\n        \"phone\": 123,\n        \"pin\": 414001\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/data/data?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"data",
+						"data"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "1e5f02b4-5574-4d19-8821-2025e4a45446"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446 new",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": " {\n        \"title\": \"BSNL36\",\n        \"phone\": 123,\n        \"pin\": 414001\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/data/data?access_token=1e5f02b4-5574-4d19-8821-2025e4a45446",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"data",
+						"data"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "1e5f02b4-5574-4d19-8821-2025e4a45446"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

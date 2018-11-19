@@ -1,0 +1,392 @@
+{
+	"variables": [],
+	"info": {
+		"name": "only2dhir",
+		"_postman_id": "80db6776-a9f6-8c87-9a80-0b38c4075a3e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/users/user",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/users/user?access_token=cf7898fe-888f-4f80-b222-773e9b47d320",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"user"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "cf7898fe-888f-4f80-b222-773e9b47d320",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/oauth/token",
+			"request": {
+				"url": "http://localhost:8080/oauth/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2Z2xhbi1jbGllbnQ6ZGV2Z2xhbi1zZWNyZXQ=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Alex123",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/oauth/token refresh",
+			"request": {
+				"url": "http://localhost:8080/oauth/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2Z2xhbi1jbGllbnQ6ZGV2Z2xhbi1zZWNyZXQ=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Alex123",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": ""
+						},
+						{
+							"key": "grant_type",
+							"value": "refresh_token",
+							"description": ""
+						},
+						{
+							"key": "refresh_token",
+							"value": "1e103f4a-ca59-4e33-9a0b-0ec9675fefb2",
+							"description": "",
+							"type": "text"
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/oauth/token Adam",
+			"request": {
+				"url": "http://localhost:8080/oauth/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2Z2xhbi1jbGllbnQ6ZGV2Z2xhbi1zZWNyZXQ=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Adam",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": ""
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/users/user?access_token=59dc33b6-77a8-4596-af7f-944ea4929481 Adam",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/users/user?access_token=59dc33b6-77a8-4596-af7f-944ea4929481",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users",
+						"user"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "59dc33b6-77a8-4596-af7f-944ea4929481",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/oauth/token tom",
+			"request": {
+				"url": "http://localhost:8080/oauth/token",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZGV2Z2xhbi1jbGllbnQ6ZGV2Z2xhbi1zZWNyZXQ=",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "username",
+							"value": "Tom234",
+							"description": ""
+						},
+						{
+							"key": "password",
+							"value": "password",
+							"description": ""
+						},
+						{
+							"key": "grant_type",
+							"value": "password",
+							"description": ""
+						}
+					]
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data",
+			"request": {
+				"url": "http://localhost:8080/data/data",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data/1?access_token=fea0e258-567c-4413-a628-1fddc489441b",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/data/data/1?access_token=fea0e258-567c-4413-a628-1fddc489441b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"data",
+						"data",
+						"1"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "fea0e258-567c-4413-a628-1fddc489441b",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/data/data?access_token=fea0e258-567c-4413-a628-1fddc489441b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"data",
+						"data"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "fea0e258-567c-4413-a628-1fddc489441b",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n        \n        \"title\": \"Idea\",\n        \"phone\": 121,\n        \"pin\": 414005\n    }"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data/4?access_token=fea0e258-567c-4413-a628-1fddc489441b",
+			"request": {
+				"url": {
+					"raw": "http://localhost:8080/data/data/4?access_token=fea0e258-567c-4413-a628-1fddc489441b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"data",
+						"data",
+						"4"
+					],
+					"query": [
+						{
+							"key": "access_token",
+							"value": "fea0e258-567c-4413-a628-1fddc489441b",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data/",
+			"request": {
+				"url": "http://localhost:8080/data/data/",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 10,\t\r\n\"title\": \"Jio 4\",\r\n\"phone\": 143643623,\r\n\"pin\": 414001\r\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/data/data/6",
+			"request": {
+				"url": "http://localhost:8080/data/data/6",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
